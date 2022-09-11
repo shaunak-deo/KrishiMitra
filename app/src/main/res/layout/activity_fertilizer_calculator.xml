@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/Fertcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:foregroundTint="#FFFFFF"
+        android:text="@string/Fertilizer_calculator_en"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fertilizer Calculator" />
+
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="218dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/colorText"
+        android:ems="10"
+        android:hint="in ha"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fertcal" />
+
+    <EditText
+        android:id="@+id/phosp"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/colorText"
+        android:ems="10"
+        android:hint="P"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size" />
+
+    <EditText
+        android:id="@+id/potash"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="152dp"
+        android:background="@color/colorText"
+        android:ems="10"
+        android:hint="K"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size" />
+
+    <EditText
+        android:id="@+id/nitro"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorText"
+        android:ems="10"
+        android:hint="N"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size" />
+
+    <TextView
+        android:id="@+id/sizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter size of your farm"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fertcal"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="@color/colorTextHint"
+        android:onClick="btnclick"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phosp" />
+
+    <TextView
+        android:id="@+id/soln"
+        android:layout_width="363dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/background_color"
+        android:backgroundTint="#0A1D44"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Fertilizer_calculator_hi"
+        android:textAlignment="center"
+        android:textColor="#F6F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fertcal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
